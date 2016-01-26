@@ -130,7 +130,7 @@
     <div class="row">
       <div class="col-md-4 content-margin-top">
  
-    <form action="bbs.php" method="post">
+    <form action="bbsbbs.php" method="post">
       <div class="form-group">
             <div class="input-group">
               <input type="text" name="nickname" class="form-control"
@@ -167,7 +167,7 @@
         <article class="timeline-entry">
 
             <div class="timeline-entry-inner">
-                <a href="bbs.php?action=edit&id=<?php echo $post['id'];?>">
+                <a href="bbsbbs.php?action=edit&id=<?php echo $post['id'];?>">
                   <div class="timeline-icon bg-success">
                       <i class="entypo-feather"></i>
                       <i class="fa fa-flag"></i>
@@ -182,10 +182,11 @@
                           //書式を変換
                           $created = date('Y/m/d',$created);                          
                       ?>
+
                       <span><?php echo $created;?></span>
                     </h2>
                     <p><?php echo $post['comment'];?></p>
-                    <a href="bbs.php?action=delete&id=<?php echo $post['id'];?>"><i class="fa fa-trash fa-lg"></i></a>
+                    <a href="bbsbbs.php?action=delete&id=<?php echo $post['id'];?>"><i class="fa fa-trash fa-lg"></i></a>
                 </div>
             </div>
 
